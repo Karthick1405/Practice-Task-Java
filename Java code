@@ -1,1 +1,21 @@
+package Test;
 
+public class FactorialNumber {
+	public static void Fact(int n) {
+		int a=0;
+		int b=0;
+		int c=1;
+		while(n>0) {
+			a=b;
+			System.out.print(a+" ");
+			b=c;
+			c=a+b;
+			n--;
+		}
+	}
+	public static void main(String[] args) {
+		int n=8;
+		Fact(n);
+	}
+
+}
